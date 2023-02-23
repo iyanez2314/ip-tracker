@@ -1,9 +1,25 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
-const SearchBar = () => {
+const SearchBar = ({ onSearch }) => {
+  const [ipAdress, setIpAdress] = useState("");
+
+  const handleUserInput = (event) => {
+    setIpAdress(event.target.value);
+  };
+
+  const handleSeach = async () => {
+    onSearch("nothing");
+  };
+
   return (
-    <div>
-      <h1>SearchBar</h1>
+    <div className="search-bar-container">
+      <input
+        type="text"
+        placeholder="Please enter IP"
+        value={ipAdress}
+        onChange={handleUserInput}
+      />
+      <button onClick={handleSeach}>Search</button>
     </div>
   );
 };
