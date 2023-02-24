@@ -8,7 +8,7 @@ const SearchBar = ({ onSearch }) => {
   };
 
   const handleSeach = async () => {
-    onSearch("nothing");
+    onSearch(ipAdress);
   };
 
   return (
