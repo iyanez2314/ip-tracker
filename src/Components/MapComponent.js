@@ -7,7 +7,7 @@ const Map = ({ latlong }) => {
       <MapContainer
         center={[latlong[0].lat, latlong[0].lng]}
         zoom={13}
-        scrollWheelZoom={false}
+        scrollWheelZoom={true}
         style={{ height: "100vh" }}
       >
         <TileLayer

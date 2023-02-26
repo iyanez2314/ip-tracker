@@ -1,24 +1,43 @@
 import React from "react";
 
 const IpInfoBanner = ({ ipAddressData }) => {
-  console.log(ipAddressData);
   return (
-    <div>
+    <div
+      style={{
+        height: "100%",
+      }}
+    >
       {ipAddressData.length === 0 ? (
-        <div>
-          <h1>No Info to display at this time</h1>
-        </div>
+        <h1> nothing here</h1>
       ) : (
-        <div>
-          <h1>IP address</h1>
-          <h1>{ipAddressData.ip}</h1>
-          <h1>location</h1>
-          <h1>
-            {ipAddressData.location.city} {ipAddressData.location.region}{" "}
-            {ipAddressData.location.postalCode}
-          </h1>
-          <h1>ISP</h1>
-          <h1>{ipAddressData.isp}</h1>
+        <div
+          style={{
+            height: "100%",
+            display: "flex",
+            justifyContent: "space-evenly",
+            alignItems: "center",
+            flexDirection: "column",
+          }}
+        >
+          <div>
+            <p>IP address</p>
+            <p>{ipAddressData.ip}</p>
+          </div>
+          <div>
+            <p>Timezone</p>
+            <p>{ipAddressData.location.timezone}</p>
+          </div>
+          <div>
+            <p>location</p>
+            <p>
+              {ipAddressData.location.city} {ipAddressData.location.region}{" "}
+              {ipAddressData.location.postalCode}
+            </p>
+          </div>
+          <div>
+            <p>ISP</p>
+            <p>{ipAddressData.isp}</p>
+          </div>
         </div>
       )}
     </div>

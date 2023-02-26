@@ -4,6 +4,7 @@ import IpInfoBanner from "./Components/IpInfoBanner";
 import Map from "./Components/MapComponent";
 import SearchBar from "./Components/SearchBar";
 import "./App.css";
+import background from "./Images/pattern-bg-desktop.png";
 
 function App() {
   const API =
@@ -29,9 +30,45 @@ function App() {
   };
 
   return (
-    <div className="App">
-      <SearchBar onSearch={handleSeach} />
-      <IpInfoBanner ipAddressData={ipAddressData} />
+    <div
+      className="App"
+      style={{
+        height: "100vh",
+      }}
+    >
+      <div
+        className="header"
+        style={{
+          backgroundImage: `url(${background})`,
+          height: "280px",
+          width: "100%",
+          display: "flex",
+          alignItems: "center",
+          flexDirection: "column",
+          justifyContent: "center",
+          position: "relative",
+        }}
+      >
+        <div className="tracker-header" style={{ height: "50px" }}>
+          <h1 style={{ color: "white" }}>IP Address Tracker</h1>
+        </div>
+        <SearchBar onSearch={handleSeach} />
+      </div>
+      <div
+        className="info-banner-container"
+        style={{
+          background: "white",
+          width: "255px",
+          height: "294px",
+          borderRadius: "10px",
+          position: "absolute",
+          zIndex: 99999,
+          top: "224px",
+          left: "50px",
+        }}
+      >
+        <IpInfoBanner ipAddressData={ipAddressData} />
+      </div>
       {latlong.length === 0 ? (
         <h1>No map to display</h1>
       ) : (

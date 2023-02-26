@@ -14,12 +14,32 @@ const SearchBar = ({ onSearch }) => {
   return (
     <div className="search-bar-container">
       <input
+        style={{
+          height: "58px",
+          width: "261px",
+          border: "none",
+          borderRadius: "10px 0px 0px 10px",
+          paddingLeft: "10px",
+          fontSize: "16px",
+        }}
         type="text"
-        placeholder="Please enter IP"
+        placeholder="8.8.8.8"
         value={ipAdress}
         onChange={handleUserInput}
       />
-      <button onClick={handleSeach}>Search</button>
+      <button
+        style={{
+          height: "60px",
+          width: "58px",
+          borde: "none",
+          borderRadius: "0px 10px 10px 0px",
+          color: "white",
+          background: "black",
+        }}
+        onClick={handleSeach}
+      >
+        Search
+      </button>
     </div>
   );
 };
