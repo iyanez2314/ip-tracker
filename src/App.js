@@ -38,7 +38,11 @@ function App() {
       <div className="info-banner-container">
         <IpInfoBanner ipAddressData={ipAddressData} />
       </div>
-      {latlong.length === 0 ? <div></div> : <Map latlong={latlong} />}
+      {latlong.length === 0 ? (
+        <div></div>
+      ) : (
+        <Map key={latlong[0].lat} latlong={latlong} />
+      )}
     </div>
   );
 }
