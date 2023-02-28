@@ -1,17 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap");
 :root {
+  --Font-Family: "Rubik", sans-serif;
   --Image-Background: "./Images/pattern-bg-desktop.png";
+  --Very-Dark-Grey: hsl(0, 0%, 17%);
+  --Dark-Grey: hsl(0, 0%, 59%);
 }
 
+* {
+  font-family: var(--Font-Family);
+}
 .App {
   text-align: center;
   height: 100vh;
 }
-/* yellow */
+
+.tracker-header > h1 {
+  font-family: var(--Font-Family);
+}
+.test {
+  background: blue;
+  width: 100%;
+  z-index: 999999999;
+}
+.header {
+  background-image: url("./Images/pattern-bg-desktop.png");
+  height: 280px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+.tracker-header {
+  height: 50px;
+}
+
+.tracker-header > h1 {
+  color: white;
+}
+
+.info-banner-container {
+  background: white;
+  width: 1110px;
+  height: 161px;
+  border-radius: 10px;
+  position: absolute;
+  z-index: 99999;
+  top: 224px;
+  left: 300px;
+}
+
+.ip-info {
+  height: 100%;
+}
+
+.ip-info-text {
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.info-section-title {
+  color: var(--Dark-Grey);
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.info {
+  font-size: 26px;
+  font-weight: 700;
+  inline-size: 226px;
+}
+
+.vl {
+  border-left: 2px solid var(--Dark-Grey);
+  height: 80px;
+}
+
+.map-container {
+  height: 100vh;
+}
+
+.search-bar-container > input {
+  height: 58px;
+  width: 555px;
+  border: none;
+  border-radius: 10px 0px 0px 10px;
+  padding-left: 10px;
+  font-size: 16px;
+}
+
+.search-bar-container > button {
+  height: 60px;
+  width: 58px;
+  border: none;
+  border-radius: 0px 10px 10px 0px;
+  color: white;
+  background: black;
+}
+
 @media only screen and (max-width: 1440px) {
-  .test {
-    background: blue;
-    width: 100%;
-    z-index: 999999999;
+  .vl {
+    display: none;
+  }
+  .info {
+    font-size: 20px;
+    font-weight: 700;
   }
   .header {
     background-image: url("./Images/pattern-bg-desktop.png");
@@ -40,7 +137,7 @@
     position: absolute;
     z-index: 99999;
     top: 224px;
-    left: 65px;
+    left: 102px;
   }
 
   .ip-info {
@@ -77,8 +174,14 @@
   }
 }
 
-/* purple */
 @media only screen and (max-width: 1229px) {
+  .vl {
+    display: none;
+  }
+  .info {
+    font-size: 20px;
+    font-weight: 700;
+  }
   .header {
     background-image: url("./Images/pattern-bg-desktop.png");
     height: 280px;
@@ -144,6 +247,13 @@
 }
 
 @media only screen and (max-width: 1093px) {
+  .vl {
+    display: none;
+  }
+  .info {
+    font-size: 17px;
+    font-weight: 700;
+  }
   .header {
     background-image: url("./Images/pattern-bg-desktop.png");
     height: 280px;
@@ -165,13 +275,13 @@
 
   .info-banner-container {
     background: white;
-    width: 712px;
+    width: 888px;
     height: 161px;
     border-radius: 10px;
     position: absolute;
     z-index: 99999;
     top: 224px;
-    left: 95px;
+    left: 63px;
   }
 
   .ip-info {
@@ -230,8 +340,8 @@
 
   .info-banner-container {
     background: white;
-    width: 572px;
-    height: 161px;
+    width: 255px;
+    height: 294px;
     border-radius: 10px;
     position: absolute;
     z-index: 99999;
@@ -248,6 +358,7 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    flex-direction: column;
   }
 
   .map-container {
@@ -301,7 +412,7 @@
     position: absolute;
     z-index: 99999;
     top: 224px;
-    left: 50px;
+    left: 60px;
   }
 
   .ip-info {
