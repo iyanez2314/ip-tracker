@@ -5,10 +5,10 @@ const Map = ({ latlong }) => {
   return (
     <div>
       <MapContainer
+        className="map-container"
         center={[latlong[0].lat, latlong[0].lng]}
         zoom={13}
         scrollWheelZoom={true}
-        style={{ height: "100vh" }}
       >
         <TileLayer
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'

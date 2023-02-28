@@ -1,38 +1,340 @@
+:root {
+  --Image-Background: "./Images/pattern-bg-desktop.png";
+}
+
 .App {
   text-align: center;
+  height: 100vh;
 }
+/* yellow */
+@media only screen and (max-width: 1440px) {
+  .test {
+    background: blue;
+    width: 100%;
+    z-index: 999999999;
+  }
+  .header {
+    background-image: url("./Images/pattern-bg-desktop.png");
+    height: 280px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+  }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+  .tracker-header {
+    height: 50px;
+  }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  .tracker-header > h1 {
+    color: white;
+  }
+
+  .info-banner-container {
+    background: white;
+    width: 1110px;
+    height: 161px;
+    border-radius: 10px;
+    position: absolute;
+    z-index: 99999;
+    top: 224px;
+    left: 65px;
+  }
+
+  .ip-info {
+    height: 100%;
+  }
+
+  .ip-info-text {
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .map-container {
+    height: 100vh;
+  }
+
+  .search-bar-container > input {
+    height: 58px;
+    width: 261px;
+    border: none;
+    border-radius: 10px 0px 0px 10px;
+    padding-left: 10px;
+    font-size: 16px;
+  }
+
+  .search-bar-container > button {
+    height: 60px;
+    width: 58px;
+    border: none;
+    border-radius: 0px 10px 10px 0px;
+    color: white;
+    background: black;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* purple */
+@media only screen and (max-width: 1229px) {
+  .header {
+    background-image: url("./Images/pattern-bg-desktop.png");
+    height: 280px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
   }
-  to {
-    transform: rotate(360deg);
+
+  .tracker-header {
+    height: 50px;
+  }
+
+  .tracker-header > h1 {
+    color: white;
+  }
+
+  .info-banner-container {
+    background: white;
+    width: 931px;
+    height: 161px;
+    border-radius: 10px;
+    position: absolute;
+    z-index: 99999;
+    top: 224px;
+    left: 92px;
+  }
+
+  .ip-info {
+    height: 100%;
+  }
+
+  .ip-info-text {
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .map-container {
+    height: 100vh;
+  }
+
+  .search-bar-container > input {
+    height: 58px;
+    width: 261px;
+    border: none;
+    border-radius: 10px 0px 0px 10px;
+    padding-left: 10px;
+    font-size: 16px;
+  }
+
+  .search-bar-container > button {
+    height: 60px;
+    width: 58px;
+    border: none;
+    border-radius: 0px 10px 10px 0px;
+    color: white;
+    background: black;
+  }
+}
+
+@media only screen and (max-width: 1093px) {
+  .header {
+    background-image: url("./Images/pattern-bg-desktop.png");
+    height: 280px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+  }
+
+  .tracker-header {
+    height: 50px;
+  }
+
+  .tracker-header > h1 {
+    color: white;
+  }
+
+  .info-banner-container {
+    background: white;
+    width: 712px;
+    height: 161px;
+    border-radius: 10px;
+    position: absolute;
+    z-index: 99999;
+    top: 224px;
+    left: 95px;
+  }
+
+  .ip-info {
+    height: 100%;
+  }
+
+  .ip-info-text {
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .map-container {
+    height: 100vh;
+  }
+
+  .search-bar-container > input {
+    height: 58px;
+    width: 261px;
+    border: none;
+    border-radius: 10px 0px 0px 10px;
+    padding-left: 10px;
+    font-size: 16px;
+  }
+
+  .search-bar-container > button {
+    height: 60px;
+    width: 58px;
+    border: none;
+    border-radius: 0px 10px 10px 0px;
+    color: white;
+    background: black;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .header {
+    background-image: url("./Images/pattern-bg-desktop.png");
+    height: 280px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+  }
+
+  .tracker-header {
+    height: 50px;
+  }
+
+  .tracker-header > h1 {
+    color: white;
+  }
+
+  .info-banner-container {
+    background: white;
+    width: 572px;
+    height: 161px;
+    border-radius: 10px;
+    position: absolute;
+    z-index: 99999;
+    top: 224px;
+    left: 95px;
+  }
+
+  .ip-info {
+    height: 100%;
+  }
+
+  .ip-info-text {
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .map-container {
+    height: 100vh;
+  }
+
+  .search-bar-container > input {
+    height: 58px;
+    width: 261px;
+    border: none;
+    border-radius: 10px 0px 0px 10px;
+    padding-left: 10px;
+    font-size: 16px;
+  }
+
+  .search-bar-container > button {
+    height: 60px;
+    width: 58px;
+    border: none;
+    border-radius: 0px 10px 10px 0px;
+    color: white;
+    background: black;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .header {
+    background-image: url("./Images/pattern-bg-desktop.png");
+    height: 280px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+  }
+
+  .tracker-header {
+    height: 50px;
+  }
+
+  .tracker-header > h1 {
+    color: white;
+  }
+
+  .info-banner-container {
+    background: white;
+    width: 255px;
+    height: 294px;
+    border-radius: 10px;
+    position: absolute;
+    z-index: 99999;
+    top: 224px;
+    left: 50px;
+  }
+
+  .ip-info {
+    height: 100%;
+  }
+
+  .ip-info-text {
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .map-container {
+    height: 100vh;
+  }
+
+  .search-bar-container > input {
+    height: 58px;
+    width: 261px;
+    border: none;
+    border-radius: 10px 0px 0px 10px;
+    padding-left: 10px;
+    font-size: 16px;
+  }
+
+  .search-bar-container > button {
+    height: 60px;
+    width: 58px;
+    border: none;
+    border-radius: 0px 10px 10px 0px;
+    color: white;
+    background: black;
   }
 }

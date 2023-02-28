@@ -2,23 +2,11 @@ import React from "react";
 
 const IpInfoBanner = ({ ipAddressData }) => {
   return (
-    <div
-      style={{
-        height: "100%",
-      }}
-    >
+    <div className="ip-info">
       {ipAddressData.length === 0 ? (
         <h1> nothing here</h1>
       ) : (
-        <div
-          style={{
-            height: "100%",
-            display: "flex",
-            justifyContent: "space-evenly",
-            alignItems: "center",
-            flexDirection: "column",
-          }}
-        >
+        <div className="ip-info-text">
           <div>
             <p>IP address</p>
             <p>{ipAddressData.ip}</p>
