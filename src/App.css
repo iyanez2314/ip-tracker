@@ -50,6 +50,7 @@
   z-index: 99999;
   top: 224px;
   left: 300px;
+  box-shadow: 0px 3px 11px -1px var(--Dark-Grey);
 }
 
 .ip-info {
