@@ -15,7 +15,7 @@ const SearchBar = ({ onSearch }) => {
     <div className="search-bar-container">
       <input
         type="text"
-        placeholder="8.8.8.8"
+        placeholder="Search for IP address or domain"
         value={ipAdress}
         onChange={handleUserInput}
       />
