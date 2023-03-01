@@ -85,6 +85,12 @@
   height: 100vh;
 }
 
+.search-bar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .search-bar-container > input {
   height: 58px;
   width: 555px;

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import arrowImage from "../Images/Arrow-right.png";
 
 const SearchBar = ({ onSearch }) => {
   const [ipAdress, setIpAdress] = useState("");
@@ -19,7 +20,13 @@ const SearchBar = ({ onSearch }) => {
         value={ipAdress}
         onChange={handleUserInput}
       />
-      <button onClick={handleSeach}>Search</button>
+      <button onClick={handleSeach}>
+        <img
+          src={arrowImage}
+          style={{ width: "25px", height: "25px", color: "red" }}
+          alt="arrow pointing right"
+        />
+      </button>
     </div>
   );
 };

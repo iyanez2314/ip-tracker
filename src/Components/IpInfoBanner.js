@@ -4,7 +4,7 @@ const IpInfoBanner = ({ ipAddressData }) => {
   return (
     <div className="ip-info">
       {ipAddressData.length === 0 ? (
-        <h1> nothing here</h1>
+        <h1></h1>
       ) : (
         <div className="ip-info-text">
           <div>
